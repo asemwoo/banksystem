@@ -1,8 +1,8 @@
 package bank.service;
 
-import bank.dao.BankDao;
+import bank.dao.BankDao; 
 import bank.vo.Account;
-
+ 
 public class Service {
 	private static Service service = new Service();
 	private Service() {}  //외부접근

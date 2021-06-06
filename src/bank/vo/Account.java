@@ -9,9 +9,7 @@ public class Account {
 	{
 		this.id=tId;
 		this.pwd= tPwd;
-	 
 	}
-	
 	public String getId()
 	{
 		return id;
@@ -29,7 +27,6 @@ public class Account {
 	{
 		this.pwd= tPwd;
 	}
-	
 	public	int getMoney()
 	{
 		return money;

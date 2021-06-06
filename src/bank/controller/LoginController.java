@@ -1,6 +1,6 @@
 package bank.controller;
 
-import java.io.IOException;
+import java.io.IOException; 
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -15,6 +15,7 @@ public class LoginController implements Controller{
 			throws ServletException, IOException {
 		String id = request.getParameter("id");
 		String pwd = request.getParameter("pwd");
+	
 		
 		Service s = Service.getInstance();
 		boolean result = s.login(id,pwd);
@@ -31,5 +32,4 @@ public class LoginController implements Controller{
 		}
 		HttpUtil.forward(request, response, path);
 	}
-
 }

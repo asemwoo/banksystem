@@ -20,7 +20,7 @@ public class BankDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			conn= DriverManager.getConnection("jdbc:mysql://localhost:8081/bankdb","root","1234");	
 		}catch(Exception e) {
-			System.out.println("MDAO:connect"+e);
+			System.out.println("MDAO:connect" +e);
 		}
 		return conn;
 	}
@@ -65,7 +65,6 @@ public class BankDao {
 			pstmt.setString(2, account.getPwd());
 			pstmt.setString(3, account.getMoney()+"");
 			pstmt.executeUpdate();
-			
 		}catch(Exception e)
 		{
 			System.out.print("join error" +e);

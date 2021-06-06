@@ -19,7 +19,7 @@
 			%>
 			<form action ="transfer,do" method ="post">
 			Receiver ID : <input type ="text"  readonly name ="rId" value ="${rId }"/><br>
-			Money:<input type ="submit" value "Transfer"/>
+			Money:<input type ="submit" value="Transfer"/>
 			</form>
 			
 			<% } else if (result != null && result.equals("false")){ 

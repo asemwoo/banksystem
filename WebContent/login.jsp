@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="login.do" method="put">
+	<form action="login.do" method="post">
 	ID:<input type="text" name="id" /><br>
 	PASSWORD:<input type ="password" name="pwd"/><br>
 	<input type="submit" value="LOGIN" />
